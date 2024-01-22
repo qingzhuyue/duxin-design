@@ -1,0 +1,366 @@
+ $colorblue: #2196f3;
+
+ .indexPage {
+   background: #fff;
+   min-height: 'calc(100vh - 160px)';
+   box-sizing: border-box;
+   padding: 12px 24px;
+   position: relative;
+   max-width: 1500px;
+   margin: 0 auto;
+
+   .toolbar {
+     margin-bottom: 12px;
+     overflow: auto;
+
+     button {
+       margin-left: 10px;
+     }
+
+     :global {
+       .query {
+         float: left;
+         height: 100%;
+
+         .ant-form-item-control {
+           line-height: 32px;
+         }
+
+         .ant-form-inline .ant-form-item {
+           margin-right: 12px;
+         }
+       }
+
+       .ant-tabs-nav .ant-tabs-tab {
+         padding: 6px 0;
+       }
+
+       .operate {
+         float: right;
+         height: 100%;
+         vertical-align: middle;
+       }
+     }
+   }
+ }
+
+ .indexContent {
+   box-sizing: border-box;
+   position: relative;
+
+   :global {
+     .ant-row .ant-form-item {
+       width: 100%;
+     }
+   }
+ }
+
+ .toolbarSearch {
+   //  margin-bottom: 12px;
+
+   .ant-form-item {
+     margin-bottom: 0px;
+   }
+
+   :global {
+     .ant-form-item-control {
+       line-height: 32px;
+     }
+
+     // .ant-tabs-nav .ant-tabs-tab {
+     //   padding: 6px 16px;
+     // }
+     // .ant-tabs-nav .ant-tabs-tab:hover {
+     //   color: black;
+     // }
+   }
+
+   .ant-picker-input {
+     padding: 0 10px;
+   }
+
+   .extAction {
+     button {
+       margin-left: 12px;
+     }
+   }
+ }
+
+ .fullPage {
+   min-height: 300px;
+   // padding-top: 65px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   background: #f0f2f5;
+   box-sizing: border-box;
+
+   .subBar {
+     position: relative;
+     // top: 65px;
+     left: 0;
+     line-height: 40px;
+     width: 100%;
+     text-align: center;
+     z-index: 99;
+
+     .select {
+       position: absolute;
+       right: 25px;
+       top: 6px;
+       width: 180px;
+     }
+
+     :global {
+       .ant-menu-item {
+         padding: 0;
+         margin-right: 25px;
+       }
+     }
+   }
+
+   .fullPageContent {
+     // max-width: 1500px;
+     flex: auto;
+     // margin: 0 auto;
+     padding: 24px;
+     // min-height: ~'calc(100vh - 100px)';
+     position: relative;
+     box-sizing: border-box;
+     overflow: auto;
+   }
+ }
+
+ .fullPageBtnBar {
+   // position: fixed;
+   // top: 0;
+   // left: 0;
+   width: 100%;
+   line-height: 65px;
+   //height: 65px;
+   border-bottom: 1px solid #e8e8e8;
+   background: white;
+   z-index: 10;
+   text-align: right;
+   padding: 0 32px;
+
+   button {
+     margin-left: 10px;
+   }
+
+   .left {
+     text-align: left;
+     float: left;
+     height: 65px;
+     left: 0;
+     padding-left: 40px;
+
+     :global {
+       .go-back-btn {
+         position: absolute;
+         left: 32px;
+         font-size: 16px;
+         line-height: 65px;
+         cursor: pointer;
+         color: #868383;
+         padding: 2px 4px 0;
+         z-index: 10;
+       }
+     }
+
+     .title {
+       font-size: 15px;
+       font-weight: 500;
+     }
+
+     .info {
+       font-size: 13px;
+       margin-right: 20px;
+       display: inline-block;
+
+       .infoKey {
+         color: #b1b1b1;
+         padding-right: 6px;
+       }
+     }
+   }
+
+   .right {
+     float: right;
+   }
+ }
+
+ .tabsCover {
+   :global {
+     .ant-tabs-bar {
+       margin: 0;
+
+       .ant-tabs-tab {
+         padding: 8px 0;
+         margin-right: 32px;
+       }
+
+       .ant-tabs-tab:last-of-type {
+         margin-right: 0;
+       }
+     }
+   }
+ }
+
+ .levelSearch {
+   padding: 20px 24px 12px;
+   background: #fff;
+   margin-top: 12px;
+   display: block;
+
+   :global {
+     .ant-form-item-control {
+       line-height: 40px;
+     }
+
+     .ant-form-item {
+       margin-bottom: 8px;
+     }
+   }
+ }
+
+ .hide {
+   display: none;
+   opacity: 0;
+ }
+
+ .search {
+   cursor: pointer;
+   margin-left: 1px;
+
+   :hover {
+     color: $colorblue !important;
+   }
+ }
+
+ .formItemBottom {
+   :global {
+     .ant-form-item {
+       margin-bottom: 0;
+     }
+   }
+ }
+
+ .basic-search-form {
+   max-width: 1500px;
+   margin: 0 auto;
+   margin-bottom: 6px;
+   padding-left: 18px;
+
+   :global {
+     .ant-form-item {
+       margin-bottom: 5px;
+     }
+   }
+ }
+
+ .basic-search-form .ant-col-4,
+ .basic-search-form .ant-col-5,
+ .basic-search-form .ant-col-6,
+ .basic-search-form .ant-col-8,
+ .basic-search-form .ant-col-9,
+ .basic-search-form .ant-col-10,
+ .basic-search-form .ant-col-11,
+ .basic-search-form .ant-col-12 {
+   padding: 0 16px;
+ }
+
+ .basic-search-form .ant-form-item {
+   display: flex;
+   margin-bottom: 16px;
+   margin-right: 0;
+ }
+
+ .basic-search-form .ant-form-item-label {
+   overflow: visible;
+   margin-right: 8px;
+ }
+
+ .basic-search-form .ant-form-item-control-wrapper {
+   flex: 1 1 auto;
+ }
+
+ .basic-search-form .ml16 {
+   margin-left: 16px;
+ }
+
+ .basic-search-form .row {
+   padding: 10px 20px;
+   background: #fff;
+   margin-bottom: 8px;
+   display: block;
+   margin-top: 5px;
+ }
+
+ .basic-search-form .hidden {
+   &:hover {
+     cursor: pointer;
+     color: #2196f3;
+   }
+
+   .rotate {
+     transform: rotate(90deg);
+   }
+ }
+
+ .complexQuery {
+   background: white;
+   padding: 20px;
+   margin-bottom: 8px;
+ }
+
+ .sider {
+   :global {
+     .ant-layout-sider-children {
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+     }
+
+     .ant-layout-sider {
+       background: none;
+     }
+
+     .ant-anchor-ink:before {
+       display: none;
+     }
+
+     .ant-anchor {
+       width: 200px;
+       position: fixed;
+       margin-left: -250px;
+       height: 'calc(100vh - 124px)';
+       overflow: auto;
+       background: transparent;
+       box-sizing: border-box;
+       margin-top: -15px;
+       text-align: right;
+     }
+
+     a:visited {
+       color: rgba(0, 0, 0, 0.65);
+     }
+   }
+ }
+
+ .columnLayout {
+   margin-bottom: 20px;
+   display: flex;
+
+   // width: 1000px;
+   >div:first-child {
+     width: 72px;
+     margin-right: 24px;
+     color: black;
+     opacity: 0.65;
+   }
+
+   >div:last-child {
+     flex: 1;
+   }
+ }
